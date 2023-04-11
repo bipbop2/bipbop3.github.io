@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="flashcards.css">
+</head>
+<body>
+    <header>
+        <!--Container og subcontainer hjelper oss med å gjøre det responsivt på store skjermer-->
+        <div class="sontainer">
+            <div class="subcontainer">
+                <!--Navbar starter her-->
+                <nav class="navbar">
+                    <!--Logo-->
+                    <a href="../Index/index.html" class="logo">(S)PILL</a>
+                    <ul class="navmenu">
+                        <!--sider-->
+                        <li class="nav-item"> 
+                            <a href="../Flashcards/flashcards.html" class="navlink">Flashcards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/quiz.html" class="navlink">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/highscore.html" class="navlink">Highscore</a>
+                        </li>
+                    </ul>
+                    <!--Selve "hamburgeren" -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 1</h2>
+                                <p>Hvilke tall baserer det binære tallsystemet seg på?</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 1</h2>
+                                <p>0 og 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 2</h2>
+                                <p>Hvilken farge gir følgende kode: rgb(0,0,70)?</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 2</h2>
+                                <p>En mørk blåfarge</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 3</h2>
+                                <p>Hvilket tall i titallsystemet tilsvarer dette binære tallet 0101?</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 3</h2>
+                                <p>5</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 4</h2>
+                                <p>Hva står HTML og CSS for?</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 4</h2>
+                                <p>HyperText Markup Language, Cascading Style Sheets</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 5</h2>
+                                <p>Hilken datatype er dette: let biler = ["BMW", "Tesla", "Audi"]</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 5</h2>
+                                <p>Array (med tekst)</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 6</h2>
+                                <p>Hvordan refererer man til et stilark?</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 6</h2>
+                                <p> link rel="stylesheet" href="" </p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 7</h2>
+                                <p>Hva er riktig om lokale variabler?</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 7</h2>
+                                <p>Variabler deklarert inni en funksjon. Brukes for å forenkle koden inni funksjoner. Verdien kan kun endres i funksjonen der de er deklarert (utilgjengelig utenfra)</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 8</h2>
+                                <p>Hva betyr x===y?</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 8</h2>
+                                <p>x og y har samme verdi og datatype.</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 9</h2>
+                                <p>Hvilket tall blir: Math.ceil(5.1)</p>
+                            </div>
+                            <div class="back">
+                                <h2>Svar 9</h2>
+                                <p>6</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="card-inner">
+                            <div class="front">
+                                <h2>Spørsmål 10</h2>
+                                <p>Hva er riktig om en for-løkke??</p>
+                            </div>
+                            <div class="back">                               
+                                <h2>Svar 10</h2>
+                                <p>ofte vet vi på forhånd hvor mange ganger vu ønsker å repetere noe kode. Betingelsen er ofte knyttet til en teller.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="flashcards.js"></script>
+    <script src="../navbar.js"></script>
+</body>
+</html>

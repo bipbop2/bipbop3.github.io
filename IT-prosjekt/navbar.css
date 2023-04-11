@@ -1,0 +1,155 @@
+/*Jeg brukte denne tutorealen til inspirasjon for nav-baren https://www.youtube.com/watch?v=zuAmsj2EN54 */
+
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,600;0,700;1,400&family=Nova+Square&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    position: relative;
+    height: 100%;
+    font-family: 'Nova Square', sans-serif, cursive;
+}
+
+header{
+    position: fixed; /*Navbaren blir på samme sted, selv om man skroller nedover siden*/
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+}
+
+li{
+    list-style: none;
+}
+a{
+    color: lime;
+    text-decoration: none;
+}
+
+/*linje animasjon under lenkene*/
+.nav-item{
+    position: relative;
+    font-size: 20px;
+}
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 180, 168);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+}
+.nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Responsivt på store skjermer*/
+.container{
+    width: 1600px;
+    margin: auto;
+}
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+
+
+/*bruker display flex til å plassere lenkene dit jeg ønsker*/
+.navbar{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+
+/*DIsplay none for at hamburgermenyen ikke vises på store skjermer*/
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+/* lager "hamburgeren"*/
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/*Flytter nettsiden slik at den er under navbar*/
+#home{
+    margin-top: 100px;
+}
+
+
+
+
+/*Gjør nettsiden reponsiv på små skjermer*/
+@media(max-width:1600px){
+    .container{
+        width:100%
+    }
+}
+
+/*Hamburgeren vises når skjermen er under 1024px*/
+@media(max-width:1024px){
+    .hamburger{
+        display: block;
+    }
+
+    /*Lager animasjonen (kryss)*/
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0; 
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .navmenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(55, 55, 55);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+    .navmenu.active{
+        left: 0;
+    }
+}

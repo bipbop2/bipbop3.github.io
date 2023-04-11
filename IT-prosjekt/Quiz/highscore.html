@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highscore</title>
+
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="highscore.css">
+</head>
+<body>
+    <header>
+        <!--Container og subcontainer hjelper oss med å gjøre det responsivt på store skjermer-->
+        <div class="container">
+            <div class="subcontainer">
+                <!--Navbar starter her-->
+                <nav class="navbar">
+                    <!--Logo-->
+                    <a href="../Index/index.html" class="logo">(S)PILL</a>
+                    <ul class="navmenu">
+                        <!--sider-->
+                        <li class="nav-item"> 
+                            <a href="../Flashcards/flashcards.html" class="navlink">Flashcards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/quiz.html" class="navlink">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="navlink">Highscore</a>
+                        </li>
+                    </ul>
+                    <!--Selve "hamburgeren" -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--nettsiden-->
+    <section id="home">
+        <div id="quizHome">
+            <div id="highScores">
+                <h1 id="finalScore">Highscore</h1>
+                <ul id="highScoresList"></ul>
+                <a href="quiz.html" class="btn">Tilbake til start</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../navbar.js"></script>
+    <script src="highscore.js"></script>
+</body>
+</html>

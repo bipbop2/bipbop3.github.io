@@ -1,0 +1,22 @@
+/* Bakgrunnsbilde */
+body{
+    background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/04/neo-first-jump-the-matrix.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+#highScoresList {
+    list-style: none;
+    margin: 10px 0px 25px 0px;
+    text-align: center;
+    
+
+}
+
+#highScores{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+

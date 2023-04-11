@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjem side</title>
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--Container og subcontainer hjelper oss med å gjøre det responsivt på store skjermer-->
+        <div class="container">
+            <div class="subcontainer">
+                <!--Navbar starter her-->
+                <nav class="navbar">
+                    <!--Logo-->
+                    <a href="../Index/index.html" class="logo">(S)PILL</a>
+                    <ul class="navmenu">
+                        <!--sider-->
+                        <li class="nav-item"> 
+                            <a href="../Flashcards/flashcards.html" class="navlink">Flashcards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/quiz.html" class="navlink">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/highscore.html" class="navlink">Highscore</a>
+                        </li>
+                    </ul>
+                    <!--Selve "hamburgeren" -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Jeg brukte denne tutorealen https://www.youtube.com/watch?v=f4fB9Xg2JEY -->
+    <section id="home">
+        <div id="quizHome">
+            <h1>Er du klar?</h1>
+            <a href="playQuiz.html" class="btn" id="gameBtn">Spill</a>
+            <a href="../Quiz/highscore.html" class="btn" id="HighScoreBtn">High Scores <i class="fa-solid fa-crown" style="color: #ffcb0f;"></i></a>
+        </div>
+    </section>
+
+    <script src="../navbar.js"></script>
+</body>
+</html>

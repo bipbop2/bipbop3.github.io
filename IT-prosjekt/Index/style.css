@@ -1,0 +1,71 @@
+/*Bakgrunnsbilde*/
+body{
+    background-image: url('https://i0.wp.com/lordlibidan.com/wp-content/uploads/2019/04/The-Matrix-screenshot.jpg?resize=1019%2C425&ssl=1');
+    background-size: cover; 
+    background-position: center; 
+}
+
+#instruks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    color: aliceblue;
+    background-color: rgba(10, 10, 10, 0.55);
+    width: 90%;
+    max-width: 500px;
+    font-size: 28px;
+    padding: 15px;
+    border: 2px solid lime;
+}
+#howToPlay{
+    font-size: 23px;
+    margin: 20px;
+    color: limegreen;
+}
+
+#frontPageLinks{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fpl{
+    background-color: blue;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+    font-size: 27px;
+    text-align: center;
+}
+.fpl:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+#ps{
+    display: none;
+    color: lightgray;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media(max-width:1024px){
+    #instruks{
+        font-size: 17px;
+        padding: 10px;
+    }
+    #howToPlay{
+        font-size: 18px;
+    }
+    .fpl{
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    #ps{
+        display: block;
+    }
+}
+

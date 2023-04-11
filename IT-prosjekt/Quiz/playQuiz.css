@@ -1,0 +1,81 @@
+
+#game{
+    width: 100%;
+}
+
+#question{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.choiceContainer{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 4px;
+    background: blue;
+    font-size: 20px;
+}
+.choiceContainer:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.choicePrefix{
+    padding: 10px 15px;
+}
+
+.choiceText{
+    padding: 10px;
+    width: 100%;
+}
+
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+
+/* HUP heads up display */
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hudPrefix{
+    text-align: center;
+    font-size: 30px;
+}
+
+.hudMainText{
+    text-align: center;
+}
+
+#progressBar{
+    width: 200px;
+    height: 20px;
+    border: solid 3px lime;
+    margin-top: 15px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+#progressBarFull{
+    height: 100%;
+    background-color: lime;
+    width: 0%;
+}
+
+@media(max-width:1024px){
+    .hudPrefix{
+        font-size: 25px;
+    }
+    #question{
+        font-size: 28px;
+    }
+    #quizHome{
+        margin-top: 130px;
+    }
+}

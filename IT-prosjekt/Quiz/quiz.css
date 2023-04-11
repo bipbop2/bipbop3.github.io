@@ -1,0 +1,76 @@
+/*Bakgrunnsbilde*/
+body{
+    background-image: url('https://img.netzwelt.de/dw1600_dh900_sw1920_sh1080_sx0_sy0_sr16x9_nu2/picture/original/2021/06/matrix-308459.jpeg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+h1{
+    font-size: 55px;
+    color: lightblue;
+}
+
+#quizHome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    border: 2px solid lime;
+    margin-top: 180px;
+    padding: 20px;
+    width: 80%;
+    max-width: 450px;
+    color: white;
+}
+
+.btn{
+    font-size: 29px;
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    max-width: 200px;
+    text-align: center;
+    background-color: blue;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/*Sluttside*/
+.endFormContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+}
+
+#end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 120px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(86, 185, 235, 0.5);
+}
+

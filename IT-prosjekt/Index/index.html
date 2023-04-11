@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjem</title>
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Jeg brukte denne tutorealen til inspirasjon for nav-baren https://www.youtube.com/watch?v=zuAmsj2EN54 -->
+    <header>
+        <!--Container og subcontainer hjelper oss med å gjøre det responsivt på store skjermer-->
+        <div class="container">
+            <div class="subcontainer">
+                <!--Navbar starter her-->
+                <nav class="navbar">
+                    <!--Logo-->
+                    <a href="#" class="logo">(S)PILL</a>
+                    <ul class="navmenu">
+                        <!--sider-->
+                        <li class="nav-item"> 
+                            <a href="../Flashcards/flashcards.html" class="navlink">Flashcards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/quiz.html" class="navlink">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/highscore.html" class="navlink">Highscore</a>
+                        </li>
+                    </ul>
+                    <!--Selve "hamburgeren" -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--nettsiden-->
+    <section id="home">
+        <div class="container">
+            <div class="subcontainer">
+                <div id="frontPageLinks">
+                    <a href="../Flashcards/flashcards.html" class="fpl">Flashcards</a>
+                    <a href="../Quiz/quiz.html" class="fpl">Quiz</a>
+                    <a href="../Quiz/highscore.html" class="fpl">Highscores</a>
+                </div>
+                <div id="instruks">
+                    <h1>Velkommen til programmeringsspillet</h1>
+                    <p id="howToPlay">Dette er en nettside inspirert av den ikoniske filmen, Matrix. Channel din indre Neo og  lær grunnleggende kunnskaper om programmering. Bruk flashcards til å øve deg, og når du føler deg klar kan du ta quizen. For hvert riktig svar får du 100 poeng. Du kan lagre poengene dine, og prøve å slå gamle rekorder som lagres under "highscores". Lykke til!!!</p>
+                    <p id="ps">ps: nettsiden egner seg best på pc</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+    
+    <script src="../navbar.js"></script>
+</body>
+</html>

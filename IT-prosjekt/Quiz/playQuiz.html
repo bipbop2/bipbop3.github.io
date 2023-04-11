@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spill Quiz</title>
+
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="playQuiz.css">
+    <link rel="stylesheet" href="../navbar.css">
+</head>
+<body>
+    <header>
+        <!--Container og subcontainer hjelper oss med å gjøre det responsivt på store skjermer-->
+        <div class="container">
+            <div class="subcontainer">
+                <!--Navbar starter her-->
+                <nav class="navbar">
+                    <!--Logo-->
+                    <a href="../Index/index.html" class="logo">(S)PILL</a>
+                    <ul class="navmenu">
+                        <!--sider-->
+                        <li class="nav-item"> 
+                            <a href="../Flashcards/flashcards.html" class="navlink">Flashcards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/quiz.html" class="navlink">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Quiz/highscore.html" class="navlink">Highscore</a>
+                        </li>
+                    </ul>
+                    <!--Selve "hamburgeren" -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--nettsiden-->
+    <section id="home">
+        <div id="quizHome">
+            <div id="game">
+                <div id="hud">
+                    <div class="hudItem">
+                        <p id="progressText" class="hudPrefix">
+                            Spørsmål
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
+                    </div>
+                    <div class="hudItem">
+                        <p class="hudPrefix">
+                            Score
+                        </p>
+                        <h1 class="hudMainText" id="score">
+                            0
+                        </h1>
+                    </div>
+                </div>
+                <h1 id="question">et spørsmål</h1>
+                <div class="choiceContainer">
+                    <p class="choicePrefix">A</p>
+                    <p class="choiceText" data-number="1">Choice 1</p>
+                </div>
+                <div class="choiceContainer">
+                    <p class="choicePrefix">B</p>
+                    <p class="choiceText" data-number="2">Choice 2</p>
+                </div>
+                <div class="choiceContainer">
+                    <p class="choicePrefix">C</p>
+                    <p class="choiceText" data-number="3">Choice 3</p>
+                </div>
+                <div class="choiceContainer">
+                    <p class="choicePrefix">D</p>
+                    <p class="choiceText" data-number="4">Choice 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../navbar.js"></script>
+    <script src="playQuiz.js"></script>
+</body>
+</html>
